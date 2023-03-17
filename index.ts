@@ -26,7 +26,7 @@ const startServer = async () => {
     console.log(error);
   }
 
-  app.listen(8080, () => {
+  app.listen(process.env.PORT, () => {
     console.log("Server has started on port http://localhost:8080");
   });
 };
